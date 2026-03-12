@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 public class AttackEnemyState : EnemyState, ICharacterState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public AttackEnemyState(EnemyController enemyController, Animator animator, NavMeshAgent navMeshAgent) 
         : base(enemyController, animator, navMeshAgent) { }
 

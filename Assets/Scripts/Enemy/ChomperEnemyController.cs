@@ -7,7 +7,7 @@ public class ChomperEnemyController : EnemyController, IWeaponObserver<GameObjec
 
     private void Start()
     {
-        _meleeWeaponController.GetComponent<MeleeWeaponController>();
+        _meleeWeaponController = GetComponent<MeleeWeaponController>();
         _meleeWeaponController.Subscribe(this);
     }
 
@@ -23,17 +23,19 @@ public class ChomperEnemyController : EnemyController, IWeaponObserver<GameObjec
 
     public void AttackBegin()
     {
-        
+        _meleeWeaponController.StartTrigger();
     }
 
     public void AttackEnd()
     {
-        
+        _meleeWeaponController.EndTrigger();
     }
 
     public void OnNext(GameObject value)
     {
-        // TODO : 플레이어에게 데미지를 전달
+        var playerController = value.GetComponent<PlayerController>();
+        Debug.Log("적이 플레이어 공격");
+        playerController?.SetHit(10, -transform.forward);
     }
 
     public void OnCompleted()
