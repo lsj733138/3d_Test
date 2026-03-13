@@ -27,7 +27,10 @@ public class EllenPlayerController : PlayerController, IWeaponObserver<GameObjec
     public void OnNext(GameObject value)
     {
         var enemyController = value.GetComponent<EnemyController>();
-        enemyController?.SetHit(10, transform.forward);
+        
+        var attackDirection = (enemyController.transform.position - transform.position).normalized;
+        enemyController?.SetHit(10, attackDirection);
+        
         Debug.Log("플레이어가 적 공격");
     }
 
