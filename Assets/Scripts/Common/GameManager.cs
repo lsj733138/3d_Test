@@ -15,6 +15,11 @@ public class GameManager : Singleton<GameManager>
         _isCursorLock = !_isCursorLock;
     }
 
+    public void LoadScene(Constants.ESceneType sceneType)
+    {
+    }
+    
+    
     private Canvas GetCanvas()
     {
         var canvasObject = GameObject.FindGameObjectWithTag("Canvas");
