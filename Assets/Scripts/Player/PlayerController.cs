@@ -70,6 +70,12 @@ public class PlayerController : MonoBehaviour
             { EPlayerState.Hit, hitPlayerState },
         };
         
+        // 커서 숨기기
+        _playerInput.actions["Cursor"].performed += _ => GameManager.Instance.SetCursorLock();
+    }
+
+    private void OnEnable()
+    {
         // 카메라 할당
         var playerCamera = Camera.main;
         if (playerCamera != null)
@@ -77,9 +83,6 @@ public class PlayerController : MonoBehaviour
             _playerInput.camera = playerCamera;
             playerCamera.GetComponent<CameraController>().SetTarget(headTransform, _playerInput);
         }
-        
-        // 커서 숨기기
-        _playerInput.actions["Cursor"].performed += _ => GameManager.Instance.SetCursorLock();
     }
 
     private void Start()
@@ -91,7 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         if (PlayerState != EPlayerState.None) _playerStates[PlayerState].Update();
     }
-
+    
     // 새로운 상태를 할당하는 함수
     public void SetState(EPlayerState state)
     {
@@ -110,6 +113,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnAnimatorMove()
     {
+        if (PlayerState == EPlayerState.None) return;
+        
         Vector3 movePosition;
         if (_characterController.isGrounded)
         {

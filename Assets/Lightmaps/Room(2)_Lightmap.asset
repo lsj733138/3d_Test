@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29095670ecdf028478391a45e329eae1, type: 3}
+  m_Name: Room(2)_Lightmap
+  m_EditorClassIdentifier: Assembly-CSharp::LightmapAssets
+  lightmapColor:
+  - {fileID: 2800000, guid: 340e10c7e2d4c0547983ca135b2b8589, type: 3}
+  - {fileID: 2800000, guid: 2ba57db42a6424f408571f4aad8b05d1, type: 3}
+  - {fileID: 2800000, guid: ced004156bcc707458027f259817c9ba, type: 3}
+  - {fileID: 2800000, guid: e2a55944b9087524881e9eaec6748f65, type: 3}
+  - {fileID: 2800000, guid: 8557e8f9e55109d4d8d1077f0bdc6843, type: 3}
+  - {fileID: 2800000, guid: ee9f7688ccaa61b41a5bd4db2244bf5f, type: 3}
+  - {fileID: 2800000, guid: 0b14966584bfd6e4bbc99b6d03d712f9, type: 3}
+  - {fileID: 2800000, guid: 7a244e3b3367abe4b8c5736376a00a4f, type: 3}
+  - {fileID: 2800000, guid: 80efebc02b19fe74fa48b09e1fbb54c7, type: 3}
+  - {fileID: 2800000, guid: 779af83af2856374a922244b4b7be0c0, type: 3}
+  - {fileID: 2800000, guid: 8bdc59935aa043a42abb3c67de228f68, type: 3}
+  lightmapDir:
+  - {fileID: 2800000, guid: 4b5ec1a61eab8444ebbeb038f71d8770, type: 3}
+  - {fileID: 2800000, guid: ffa07accf93a204469aa66ddf189f915, type: 3}
+  - {fileID: 2800000, guid: f9e2e3d9d8900ee48b750d5bbf61279c, type: 3}
+  - {fileID: 2800000, guid: 1c7423671e07c71448bcab2273ce0efa, type: 3}
+  - {fileID: 2800000, guid: 63e7846da8afeea448d102ce68a9093b, type: 3}
+  - {fileID: 2800000, guid: bd57b8f79516d0349bbbb1a4d4b90047, type: 3}
+  - {fileID: 2800000, guid: a83c513c7c2ad4b4d9e84c21c9fb63e8, type: 3}
+  - {fileID: 2800000, guid: 489eef85b3bb45545b23852f59dc5576, type: 3}
+  - {fileID: 2800000, guid: 7adc083e2c2879242ba0a2258bc914de, type: 3}
+  - {fileID: 2800000, guid: 5afe1ab15de6c46489230bfb5f0f7a1d, type: 3}
+  - {fileID: 2800000, guid: ef4681ed9c436644eaa382d1215b0c31, type: 3}
+  shadowMask:
+  - {fileID: 2800000, guid: ac7233b7f9d21a9468ed4b540b8d613b, type: 3}
+  - {fileID: 2800000, guid: 2f315f1fdcfbc0c4581a3f38fbeb9989, type: 3}
+  - {fileID: 2800000, guid: 1ef8cb00df569a24aae0d13362fd5972, type: 3}
+  - {fileID: 2800000, guid: 6c475eebaa5ab5e40b106be578386a2d, type: 3}
+  - {fileID: 2800000, guid: 48fa702d1ec908a4e91c42af04fd6da4, type: 3}
+  - {fileID: 2800000, guid: 27fbd9ca4160f4f419282bd8b4bc5027, type: 3}
+  - {fileID: 2800000, guid: 5d8691cac923a7f4a954b326a335c194, type: 3}
+  - {fileID: 2800000, guid: 5cf2be721b6c3fb48be8a56625746020, type: 3}
+  - {fileID: 2800000, guid: 9dc4aff5b3875794da7f5bba31408396, type: 3}
+  - {fileID: 2800000, guid: bf2f1b5b5884d6945875399b0c6c7b16, type: 3}
+  - {fileID: 2800000, guid: 073af874c6b7d7f4d80a5436f2759809, type: 3}
